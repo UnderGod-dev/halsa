@@ -107,7 +107,7 @@ const Process = () => {
         </div>
       </motion.div>
 
-      <div className="bg-light p-8 xl:p-16 rounded-3xl space-y-4">
+      <div className="bg-light p-8 xl:p-16 rounded-3xl space-y-4 overflow-x-hidden">
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{

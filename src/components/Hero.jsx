@@ -28,7 +28,7 @@ const Hero = () => {
           p1="Your Journey to Optimal Living Starts Here:"
           p2="Explore Our Integrated Health Hub."
         />
-        <div className="flex gap-2">
+        <div className="flex gap-2 overflow-x-hidden">
           <motion.div
             className=""
             initial={{ opacity: 0, x: -100 }}
