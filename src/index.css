@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  .small {
+    @apply rounded-full border bg-light w-fit px-4 py-1;
+  }
+}
