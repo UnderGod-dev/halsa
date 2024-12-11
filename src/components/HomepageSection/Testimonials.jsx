@@ -147,7 +147,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="my-12 grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
+    <div className="my-12 grid sm:grid-cols-2 xl:grid-cols-4 gap-6 px-2">
       {testimonials.map((testimonial, i) => (
         <Card content={testimonial} key={i} />
       ))}

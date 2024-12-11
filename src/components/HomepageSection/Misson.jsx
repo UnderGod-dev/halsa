@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Misson = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-12 mt-36 max-w-screen-xl mx-auto">
+    <div className="grid lg:grid-cols-2 gap-12 mt-36 max-w-screen-xl xl:mx-auto px-2">
       <motion.div
         className=""
         initial={{ opacity: 0, y: 100 }}

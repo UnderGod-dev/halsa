@@ -54,11 +54,11 @@ const Process = () => {
   //   );
   return (
     <div
-      className="grid md:grid-cols-2 min-h-screen mt-32 gap-6 "
+      className="grid md:grid-cols-2 min-h-screen mt-32 gap-6 px-2"
       //   ref={sectionRef}
     >
       <motion.div
-        className="md:sticky top-[6vh]"
+        className=""
         initial={{ opacity: 0, y: 100 }}
         whileInView={{
           opacity: 1,
@@ -67,7 +67,7 @@ const Process = () => {
         }}
       >
         <div
-          className="md:sticky md:top-0 "
+          className="md:sticky md:top-0 relative"
           // ref={imageContainerRef}
         >
           {" "}
@@ -76,7 +76,7 @@ const Process = () => {
             alt="yoga"
             className="size-full rounded-3xl md:h-screen max-h-screen object-cover"
           />
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 p-4 lg:p-8 backdrop-blur rounded-2xl w-[80%]">
+          <div className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 p-4 lg:p-8 backdrop-blur rounded-2xl w-[80%]">
             <QuoteIcon fill="white" stroke="white" />
             <p className="text-white/80 text-xl mt-2">
               Halsa guides my holistic well-being. A game-changer in my daily
@@ -107,7 +107,7 @@ const Process = () => {
         </div>
       </motion.div>
 
-      <div className="bg-light p-8 xl:p-16 rounded-3xl space-y-4 overflow-x-hidden">
+      <div className="bg-light p-4 md:p-8 xl:p-16 rounded-3xl space-y-4 overflow-x-hidden">
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{
