@@ -61,7 +61,7 @@ const Pricing = () => {
         <div className="flex justify-center gap-2 overflow-x-hidden  md:overflow-x-visible">
           <motion.div
             className=""
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, x: 100 }}
             whileInView={{
               opacity: 1,
               x: 0,
