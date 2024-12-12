@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const SectionHeader = ({ header, p1, p2 }) => {
+const SectionHeader = ({ header, p1, p2, className }) => {
   return (
     <motion.div
       className="flex flex-col my-10 text-center max-w-screen-md"
@@ -19,8 +19,8 @@ const SectionHeader = ({ header, p1, p2 }) => {
         }}
       />
 
-      <p className="text-black/50 text-lg md:text-2xl px-4">{p1}</p>
-      <p className="text-black/50 text-lg md:text-2xl px-4">{p2}</p>
+      <p className={` text-lg md:text-2xl px-4 ${className}`}>{p1}</p>
+      <p className={` text-lg md:text-2xl px-4 ${className}`}>{p2}</p>
     </motion.div>
   );
 };

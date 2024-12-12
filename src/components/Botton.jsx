@@ -1,4 +1,4 @@
-const Button = ({ content, className = "", ...props }) => {
+const Button = ({ content, className = "", onClick, disable, ...props }) => {
   const baseStyles =
     "group relative px-6 py-2 rounded-full font-medium transition-all duration-300 ease-in-out overflow-hidden";
 
@@ -9,7 +9,12 @@ const Button = ({ content, className = "", ...props }) => {
   //   };
 
   return (
-    <button className={`${baseStyles} border ${className}`} {...props}>
+    <button
+      className={`${baseStyles} border ${className}`}
+      {...props}
+      onClick={onClick}
+      disabled={disable}
+    >
       <span className="relative inline-flex overflow-hidden capitalize">
         <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:translate-y-[-160%] group-hover:skew-y-12">
           {content}

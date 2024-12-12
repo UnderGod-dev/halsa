@@ -17,4 +17,7 @@ body {
   .small {
     @apply rounded-full border bg-light w-fit px-4 py-1;
   }
+  .page-style {
+    @apply min-h-screen mt-20 md:mt-36;
+  }
 }

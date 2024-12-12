@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   const img = ["user-1", "user-2", "user-3", "user-4"];
   return (
-    <div className="bg-[url(/hero-pic.jpeg)] bg-cover bg-top bg-no-repeat lg:min-h-screen w-full relative rounded-3xl pt-10 lg:pt-20 mt-24">
+    <section className="bg-[url(/hero-pic.jpeg)] bg-cover bg-top bg-no-repeat lg:min-h-screen w-full relative rounded-3xl pt-10 lg:pt-20 mt-24">
       <div className="bg-gray-100/40 absolute inset-0 -z-10"></div>
       <div
         className="absolute bottom-0 w-[70%] left-1/2 -translate-x-1/2"
@@ -28,7 +28,7 @@ const Hero = () => {
           p1="Your Journey to Optimal Living Starts Here:"
           p2="Explore Our Integrated Health Hub."
         />
-        <div className="flex gap-2 overflow-x-hidden">
+        <div className="flex gap-2 overflow-x-hidden  md:overflow-x-visible">
           <motion.div
             className=""
             initial={{ opacity: 0, x: -100 }}
@@ -96,7 +96,7 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

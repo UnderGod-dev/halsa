@@ -3,7 +3,7 @@ import Button from "./Botton";
 import { useCallback, useEffect, useState } from "react";
 
 const Header = () => {
-  const navLinks = ["feature", "about", "member", "pricing", "blog"];
+  const navLinks = ["features", "about", "members", "pricing", "blog"];
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [openNav, setOpenNav] = useState(false);
@@ -50,7 +50,7 @@ const Header = () => {
                 key={links}
                 className="capitalize font-light px-6 py-2 border rounded-full border-transparent hover:border-gray-300 hover:bg-light transition-all duration-200 ease-linear"
               >
-                <a href="">{links}</a>
+                <a href={`/${links}`}>{links}</a>
               </li>
             ))}
           </ul>
@@ -76,7 +76,7 @@ const Header = () => {
                   className="capitalize font-light px-6 py-2 border rounded-full text-white border-transparent bg-[#ffffff0d] hover:border-gray-300 transition-all duration-200 ease-linear"
                   onClick={toggleMobileNav}
                 >
-                  <a href="">{links}</a>
+                  <a href={`/${links}`}>{links}</a>
                 </li>
               ))}
             </ul>
